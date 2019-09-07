@@ -13,7 +13,7 @@ In the root directory of the project run the following command
 ```sh
 $ docker-compose build
 ```
-This will create the Docker image named docker-django-postgres_web
+This will create the Docker image named docker-django_web
 > Usually the image name is defined as: ROOT-DIRECTORY-NAME_web
 
 Then run the following command to create a Django project
