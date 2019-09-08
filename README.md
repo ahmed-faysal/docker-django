@@ -42,7 +42,12 @@ DATABASES = {
     }
 }
 ```
-Save it. Get back to terminal and run the following command to run your project.
+Save it. Get back to terminal and run the following command to migrate your project.
+```sh
+docker-compose run manage.py migrate
+```
+
+Then start your container by running
 ```sh
 docker-compose up
 ```
