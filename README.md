@@ -18,7 +18,7 @@ This will create the Docker image named docker-django_web
 
 Then run the following command to create a Django project
 ```sh
-$ docker-compose run web django-admin.py startproject PROJECT-NAME
+$ docker-compose run web django-admin.py startproject PROJECT-NAME .
 ```
 Replace the PROJECT-NAME with your project name.
 At this point the owner of this project is root. So, you would need sudo permission to edit anything in the project.
@@ -44,7 +44,7 @@ DATABASES = {
 ```
 Save it. Get back to terminal and run the following command to migrate your project.
 ```sh
-docker-compose run manage.py migrate
+docker-compose run web manage.py migrate
 ```
 
 Then start your container by running
